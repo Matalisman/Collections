@@ -11,7 +11,7 @@ import java.util.Comparator;
  *
  * @author pc109
  */
-public class RandomObject implements Comparator<RandomObject>{
+public class RandomObject implements Comparable<RandomObject>{
     
     private int id;
     private String name;
@@ -38,9 +38,10 @@ public class RandomObject implements Comparator<RandomObject>{
         this.name = name;
     }
 
+
     @Override
-    public int compare(RandomObject o1, RandomObject o2) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int compareTo(RandomObject t) {
+        return id - t.getId();
     }
     
     

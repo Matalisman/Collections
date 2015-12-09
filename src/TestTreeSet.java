@@ -57,7 +57,7 @@ class TestTreeSet {
         long stop = 0;
         
         start = System.nanoTime();
-        treeSet.remove(1000);
+        treeSet.remove(objectToAdd);
         stop = System.nanoTime();
         
         long time= stop-start;
