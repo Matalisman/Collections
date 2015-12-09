@@ -1,3 +1,7 @@
+
+import java.util.ArrayList;
+import java.util.Map;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -102,6 +106,9 @@ public class Collections extends javax.swing.JFrame {
             collectionPick.getSelectedItem();
             amountInput.getText();
             
+            CollectionsFactory tests = new CollectionsFactory(collectionPick.getSelectedItem().toString(), Integer.valueOf(amountInput.getText()));
+            Map times = tests.getOutput();
+            System.out.println(times);
     }//GEN-LAST:event_actionButtonActionPerformed
 
     private void amountInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountInputActionPerformed

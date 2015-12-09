@@ -11,17 +11,15 @@ import java.util.ArrayList;
  *
  * @author pc109
  */
-public class CreateArrayList {
+public class CreateArrayList extends ArrayList {
     
-    ArrayList<RandomObject> getArrayList(int amount)
+    CreateArrayList(int amount)
     {
         ArrayList<RandomObject> list = new ArrayList();
         RandomObjectsCreator object;
         for (int i = 0; i<amount; i++){
-            object = new RandomObjectsCreator();
-            list.add(object.createRandomObject());
+           this.add(new RandomObjectsCreator());
         }
                 
-        return list;
     }
 }

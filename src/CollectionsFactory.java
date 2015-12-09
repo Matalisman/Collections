@@ -1,3 +1,6 @@
+
+import java.util.Map;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,23 +13,25 @@
  */
 public class CollectionsFactory {
  
-    String output = "";
+    
+    private Map times;
     public CollectionsFactory (String name, int amount){
        
         if(name == null) {
             throw new IllegalArgumentException("Path may not be null");
         }
         if (name == "ArrayList" ) {
-            CreateArrayList arrayList = new CreateArrayList();
-            arrayList.getArrayList(amount);
+            CreateArrayList arrayList = new CreateArrayList(amount);
+            TestArrayList testArray = new TestArrayList(arrayList);
+            Map times = testArray.ArrayListResults();
             
-            //output = arrayList.read();
+            this.times = times;
         }
-
+          
     }
     
-    public String getOutput()
+    public Map getOutput()
     {
-        return output;
+        return this.times;
     }
 }
