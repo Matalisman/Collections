@@ -1,5 +1,5 @@
 
-import java.util.ArrayList;
+import java.util.TreeSet;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,16 +9,15 @@ import java.util.ArrayList;
 
 /**
  *
- * @author pc109
+ * @author Michał
  */
-public class CreateArrayList extends ArrayList {
+class CreateTreeSet extends TreeSet {
     
-    CreateArrayList(int amount)
+    CreateTreeSet(int amount)
     {
-        ArrayList<RandomObject> list = new ArrayList();
+        TreeSet<RandomObject> list = new TreeSet<RandomObject>(new SortObjectsById());
         for (int i = 0; i<amount; i++){
            this.add(new RandomObjectsCreator().createRandomObject());
-        }
-                
-    }
+        }  
+    }    
 }

@@ -2,8 +2,8 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.Map;
-import static javax.management.Query.times;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -15,16 +15,17 @@ import static javax.management.Query.times;
  *
  * @author Michał
  */
-public class TestArrayList {
-    private final ArrayList arrayList;
+class TestLinkedList {
+    
+    private final LinkedList linkedList;
     RandomObjectsCreator randomer = new RandomObjectsCreator();
     RandomObject objectToAdd = randomer.createRandomObject();
     
-    TestArrayList(ArrayList arrayList){
-        this.arrayList = arrayList;
+    TestLinkedList(LinkedList linkedList){
+        this.linkedList = linkedList;
     }
     
-    Map ArrayListResults(){
+    Map  LinkedListResults(){
         
     Map resultTimes = new HashMap();
     
@@ -44,7 +45,7 @@ public class TestArrayList {
         long stop = 0;
         
         start = System.nanoTime();
-        arrayList.add(objectToAdd);
+        linkedList.add(objectToAdd);
         stop = System.nanoTime();
         
         long time= stop-start;
@@ -57,7 +58,7 @@ public class TestArrayList {
         long stop = 0;
         
         start = System.nanoTime();
-        arrayList.remove(1000);
+        linkedList.remove(objectToAdd);
         stop = System.nanoTime();
         
         long time= stop-start;
@@ -71,7 +72,7 @@ public class TestArrayList {
       long stop = 0;
       
       start = System.nanoTime();
-      Collections.sort(arrayList, new SortObjectsById());
+      Collections.sort(linkedList, new SortObjectsById());
       stop = System.nanoTime();
         
       long time= stop-start;
@@ -85,7 +86,7 @@ public class TestArrayList {
         long stop = 0;
         
         start = System.nanoTime();
-        arrayList.get(1000);
+        linkedList.get(1000);
         stop = System.nanoTime();
         
         long time= stop-start;
@@ -98,7 +99,7 @@ public class TestArrayList {
         long stop = 0;
         
         start = System.nanoTime();
-        arrayList.contains(objectToAdd);
+        linkedList.contains(objectToAdd);
         stop = System.nanoTime();
         
         long time= stop-start;

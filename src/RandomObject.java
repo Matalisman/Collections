@@ -1,3 +1,6 @@
+
+import java.util.Comparator;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,7 +11,7 @@
  *
  * @author pc109
  */
-public class RandomObject {
+public class RandomObject implements Comparator<RandomObject>{
     
     private int id;
     private String name;
@@ -33,6 +36,11 @@ public class RandomObject {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public int compare(RandomObject o1, RandomObject o2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

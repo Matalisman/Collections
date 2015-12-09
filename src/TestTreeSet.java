@@ -1,9 +1,8 @@
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
-import static javax.management.Query.times;
+import java.util.TreeSet;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -15,24 +14,25 @@ import static javax.management.Query.times;
  *
  * @author Michał
  */
-public class TestArrayList {
-    private final ArrayList arrayList;
+class TestTreeSet {
+    
+    private final TreeSet treeSet;
     RandomObjectsCreator randomer = new RandomObjectsCreator();
     RandomObject objectToAdd = randomer.createRandomObject();
     
-    TestArrayList(ArrayList arrayList){
-        this.arrayList = arrayList;
+    TestTreeSet(TreeSet treeSet){
+        this.treeSet = treeSet;
     }
     
-    Map ArrayListResults(){
+    Map TreeSetResults(){
         
     Map resultTimes = new HashMap();
     
     resultTimes.put("Dodawanie", this.add());
-    resultTimes.put("Wybieranie", this.get());
+    resultTimes.put("Wybieranie", "Brak indeksu");
     resultTimes.put("Czy zawiera? ", this.contains());
     resultTimes.put("Usuwanie", this.remove());
-    resultTimes.put("Sortowanie po Id", this.sort());
+    resultTimes.put("Sortowanie po Id", "Posortowane od razu");
     
     return resultTimes;
     
@@ -44,7 +44,7 @@ public class TestArrayList {
         long stop = 0;
         
         start = System.nanoTime();
-        arrayList.add(objectToAdd);
+        treeSet.add(objectToAdd);
         stop = System.nanoTime();
         
         long time= stop-start;
@@ -57,7 +57,7 @@ public class TestArrayList {
         long stop = 0;
         
         start = System.nanoTime();
-        arrayList.remove(1000);
+        treeSet.remove(1000);
         stop = System.nanoTime();
         
         long time= stop-start;
@@ -65,40 +65,13 @@ public class TestArrayList {
         
         return time;
     }
-    
-    public long sort() {
-      long start =0;
-      long stop = 0;
       
-      start = System.nanoTime();
-      Collections.sort(arrayList, new SortObjectsById());
-      stop = System.nanoTime();
-        
-      long time= stop-start;
-        
-        
-      return time;  
-    }
-    
-    public long get(){
-        long start =0;
-        long stop = 0;
-        
-        start = System.nanoTime();
-        arrayList.get(1000);
-        stop = System.nanoTime();
-        
-        long time= stop-start;
-        
-        return time;
-    }
-    
     public long contains(){
         long start =0;
         long stop = 0;
         
         start = System.nanoTime();
-        arrayList.contains(objectToAdd);
+        treeSet.contains(objectToAdd);
         stop = System.nanoTime();
         
         long time= stop-start;

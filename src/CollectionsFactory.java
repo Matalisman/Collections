@@ -1,11 +1,6 @@
 
+import java.util.LinkedHashSet;
 import java.util.Map;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
@@ -22,9 +17,50 @@ public class CollectionsFactory {
         }
         if (name == "ArrayList" ) {
             CreateArrayList arrayList = new CreateArrayList(amount);
+         
             TestArrayList testArray = new TestArrayList(arrayList);
             Map times = testArray.ArrayListResults();
             
+            this.times = times;
+        }
+        
+        if (name == "LinkedList" ) {
+            CreateLinkedList linkedList = new CreateLinkedList(amount);
+         
+            TestLinkedList testLinked = new TestLinkedList(linkedList);
+            Map times = testLinked.LinkedListResults();
+            
+        
+            this.times = times;
+        }
+        
+        if (name == "HashSet" ) {
+            CreateHashSet hashSet = new CreateHashSet(amount);
+         
+            TestHashSet testHashSet = new TestHashSet(hashSet);
+            Map times = testHashSet.HashSetResults();
+            
+        
+            this.times = times;
+        }
+        
+        if (name == "LinkedHashSet" ) {
+            CreateLinkedHashSet linkedHashSet = new CreateLinkedHashSet(amount);
+         
+            TestLinkedHashSet testLinkedHashSet = new TestLinkedHashSet(linkedHashSet);
+            Map times = testLinkedHashSet.LinkedHashSetResults();
+            
+        
+            this.times = times;
+        }
+        
+        if (name == "TreeSet" ) {
+            CreateTreeSet treeSet = new CreateTreeSet(amount);
+         
+            TestTreeSet testTreeSet = new TestTreeSet(treeSet);
+            Map times = testTreeSet.TreeSetResults();
+            
+        
             this.times = times;
         }
           

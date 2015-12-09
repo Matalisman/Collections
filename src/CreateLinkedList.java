@@ -1,5 +1,5 @@
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -9,16 +9,15 @@ import java.util.ArrayList;
 
 /**
  *
- * @author pc109
+ * @author Michał
  */
-public class CreateArrayList extends ArrayList {
+public class CreateLinkedList extends LinkedList {
     
-    CreateArrayList(int amount)
+    CreateLinkedList(int amount)
     {
-        ArrayList<RandomObject> list = new ArrayList();
+        LinkedList<RandomObject> list = new LinkedList();
         for (int i = 0; i<amount; i++){
            this.add(new RandomObjectsCreator().createRandomObject());
-        }
-                
+        }  
     }
 }
