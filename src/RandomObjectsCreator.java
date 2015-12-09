@@ -13,8 +13,7 @@ public class RandomObjectsCreator {
     String nameCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwxyz";
         
     RandomObject createRandomObject(){
-        RandomObject object;
-        object =  new RandomObject(randInt(min, max),randString(nameCharacters,stringLength) );     
+        RandomObject object =  new RandomObject(randInt(min, max),randString(nameCharacters,stringLength) );     
         return object;
     }
     

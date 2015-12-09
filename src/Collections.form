@@ -48,7 +48,7 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="collectionPick" pref="134" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jTextField1" max="32767" attributes="0"/>
+                          <Component id="amountInput" max="32767" attributes="0"/>
                           <Component id="jLabel1" alignment="0" pref="134" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -64,7 +64,7 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                  <Component id="amountInput" min="-2" max="-2" attributes="0"/>
                   <EmptySpace pref="257" max="32767" attributes="0"/>
                   <Component id="actionButton" min="-2" pref="62" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
@@ -94,12 +94,12 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actionButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JTextField" name="jTextField1">
+        <Component class="javax.swing.JTextField" name="amountInput">
           <Properties>
             <Property name="text" type="java.lang.String" value="500000"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="amountInputActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel1">
