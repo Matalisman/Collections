@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import static javax.management.Query.times;
@@ -27,7 +28,7 @@ public class TestArrayList {
     
     resultTimes.put("Dodawanie", this.add());
     resultTimes.put("Usuwanie", this.remove());
-    resultTimes.put("Sortowanie", this.sort());
+    resultTimes.put("Sortowanie po Id", this.sort());
     resultTimes.put("Wybieranie", this.get());
     
     return resultTimes;
@@ -67,7 +68,7 @@ public class TestArrayList {
     public long sort() {
       long start =0;
       long stop = 0;
-        
+      
       start = System.nanoTime();
       Collections.sort(arrayList, new SortObjectsById());
       stop = System.nanoTime();
