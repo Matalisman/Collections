@@ -230,3 +230,31 @@ Sortowanie po Id=151849423
  Wybieranie=2173
  Dodawanie=4034
  Usuwanie=244519 
+
+ Sortowanie po Id=167501434
+ Sortowanie po Name=373782719
+ Czy zawiera? =3780116
+ Wybieranie=1861
+ Dodawanie=3723
+ Usuwanie=196112 
+
+ Sortowanie po Id=138718317
+ Sortowanie po Name=346043151
+ Czy zawiera? =1740802
+ Wybieranie=931
+ Dodawanie=1551
+ Usuwanie=202628 
+
+ Sortowanie po Id=141777908
+ Sortowanie po Name=382626364
+ Czy zawiera? =1728700
+ Wybieranie=931
+ Dodawanie=621
+ Usuwanie=222798 
+
+ Sortowanie po Id=145840089
+ Sortowanie po Name=388881459
+ Czy zawiera? =357160
+ Wybieranie=621
+ Dodawanie=931
+ Usuwanie=113571 
