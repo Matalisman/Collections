@@ -1,9 +1,9 @@
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.logging.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -17,67 +17,32 @@ import java.io.ObjectOutputStream;
  */
 public class SaveTestsToFile {
     private String results;
+    private String resultsContent="";
 
     
     SaveTestsToFile(String results) {
         this.results = results;
-    }
-    
-    
-   public void recordEvents(){
-       String fileContent = this.readEventsFromFile();
-       this.addNewEventToLists(results);
-       this.writeEventsToFile(fileContent);
-       this.displayPriorities(fileContent);
-   }
-   
-   
-        
-    public String readEventsFromFile(){
-        
-        String resultsContent = new String();
-        ObjectInputStream resultsSavedInFile=null ;
-        
-            try {
-                resultsSavedInFile = new ObjectInputStream(new FileInputStream("Event.dat"));
-            } catch (FileNotFoundException e) {
-                    } catch (IOException ex) {
-                        Logger.getLogger(EventManager.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-            try {
-                resultsContent = (ArrayList<Event>) resultsSavedInFile.readObject();
-            } catch (NullPointerException e) {
-                } catch (ClassNotFoundException | IOException ex) {
-                        Logger.getLogger(EventManager.class.getName()).log(Level.SEVERE, null, ex);
+        this.readEventsFromFile();
+        this.writeEventsToFile();
+    }        
+    public void readEventsFromFile(){
+        try {
+            File file = new File("TestResults.txt");
+            Scanner in = new Scanner(file);
+            while(in.hasNextLine()){
+                resultsContent+="\n"+in.nextLine();
             }
-            
-        return resultsContent;
+        } catch (FileNotFoundException ex) {}
     }
     
-    public void writeEventsToFile(String eventContent) {
-        ObjectOutputStream saveNewEvents = null;
+    public void writeEventsToFile() {
+             PrintWriter zapis=null;
         try {
-            saveNewEvents = new ObjectOutputStream(new FileOutputStream("Event.dat"));
-        } catch (IOException ex) {
-            Logger.getLogger(EventManager.class.getName()).log(Level.SEVERE, null, ex);
+            zapis = new PrintWriter("TestResults.txt");
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(SaveTestsToFile.class.getName()).log(Level.SEVERE, null, ex);
         }
-        try {
-            saveNewEvents.writeObject(resultsContent);
-        } catch (IOException ex) {
-            Logger.getLogger(EventManager.class.getName()).log(Level.SEVERE, null, ex);
-        }   
-    }
-    
-    public void addNewEventToLists(String results){
-        String saveEvent = new String(results);
-        resultsContent.add(saveEvent);
-    }
-    
-
-    
-    public void displayPriorities(String resultsContent){
-        
-            System.out.println(resultsContent);
-            
+      zapis.println(resultsContent+"\n"+results);
+      zapis.close();
     }
 }

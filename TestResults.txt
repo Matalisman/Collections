@@ -1,0 +1,4 @@
+
+
+{Sortowanie po Id=Brak sortowania, Sortowanie po Name=Brak sortowania, Czy zawiera? =25994, Wybieranie=Brak indeksu, Dodawanie=14651, Usuwanie=23159}
+{Sortowanie po Id=Posortowane od razu, Sortowanie po Name=Brak sortowania, Czy zawiera? =20795, Wybieranie=Brak indeksu, Dodawanie=14651, Usuwanie=40645}
