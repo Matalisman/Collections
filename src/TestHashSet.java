@@ -14,12 +14,11 @@ import java.util.Map;
  *
  * @author Michał
  */
-class TestHashSet {
+class TestHashSet implements CollectionInterface  {
+    
     private final HashSet hashSet;
-    
-    
-    RandomObjectsCreator randomer = new RandomObjectsCreator();
-    RandomObject objectToAdd = randomer.createRandomObject();
+    private RandomObjectsCreator randomer = new RandomObjectsCreator();
+    private RandomObject objectToAdd = randomer.createRandomObject();
     
     TestHashSet(HashSet hashSet){
         this.hashSet = hashSet;
@@ -34,6 +33,7 @@ class TestHashSet {
     resultTimes.put("Czy zawiera? ", this.contains());
     resultTimes.put("Usuwanie", this.remove());
     resultTimes.put("Sortowanie po Id", "Brak sortowania");
+    resultTimes.put("Sortowanie po Name", "Brak sortowania");
     
     return resultTimes;
     
@@ -80,5 +80,21 @@ class TestHashSet {
         long time= stop-start;
         
         return time;
+    }
+
+
+    @Override
+    public long get() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public long sortById() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public long sortByName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

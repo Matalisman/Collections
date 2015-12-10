@@ -110,7 +110,8 @@ public class CollectionTester extends javax.swing.JFrame {
             CollectionsFactory tests = new CollectionsFactory(collectionPick.getSelectedItem().toString(), Integer.valueOf(amountInput.getText()));
             System.out.println(tests);
             Map times = tests.getOutput();
-            System.out.println(times);
+            String results = times.toString();
+            System.out.println(results);
     }//GEN-LAST:event_actionButtonActionPerformed
 
     private void amountInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountInputActionPerformed

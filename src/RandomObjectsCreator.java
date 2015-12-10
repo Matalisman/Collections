@@ -9,8 +9,8 @@ public class RandomObjectsCreator {
     
     int min = 10000;
     int max = 100000;
-    int stringLength = 15;
-    String nameCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwxyz";
+    int stringLength = 10;
+    String nameCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         
     RandomObject createRandomObject(){
         RandomObject object =  new RandomObject(randInt(min, max),randString(nameCharacters,stringLength) );     

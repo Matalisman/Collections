@@ -16,9 +16,10 @@ import static javax.management.Query.times;
  * @author Michał
  */
 public class TestArrayList {
+    
     private final ArrayList arrayList;
-    RandomObjectsCreator randomer = new RandomObjectsCreator();
-    RandomObject objectToAdd = randomer.createRandomObject();
+    private RandomObjectsCreator randomer = new RandomObjectsCreator();
+    private RandomObject objectToAdd = randomer.createRandomObject();
     
     TestArrayList(ArrayList arrayList){
         this.arrayList = arrayList;
@@ -32,7 +33,8 @@ public class TestArrayList {
     resultTimes.put("Wybieranie", this.get());
     resultTimes.put("Czy zawiera? ", this.contains());
     resultTimes.put("Usuwanie", this.remove());
-    resultTimes.put("Sortowanie po Id", this.sort());
+    resultTimes.put("Sortowanie po Id", this.sortById());
+    resultTimes.put("Sortowanie po Name", this.sortByName());
     
     return resultTimes;
     
@@ -66,12 +68,26 @@ public class TestArrayList {
         return time;
     }
     
-    public long sort() {
+    public long sortById() {
       long start =0;
       long stop = 0;
       
       start = System.nanoTime();
       Collections.sort(arrayList, new SortObjectsById());
+      stop = System.nanoTime();
+        
+      long time= stop-start;
+        
+        
+      return time;  
+    }
+    
+    public long sortByName() {
+      long start =0;
+      long stop = 0;
+      
+      start = System.nanoTime();
+      Collections.sort(arrayList, new SortObjectsByName());
       stop = System.nanoTime();
         
       long time= stop-start;

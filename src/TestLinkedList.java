@@ -15,11 +15,11 @@ import java.util.Map;
  *
  * @author Michał
  */
-class TestLinkedList {
+class TestLinkedList implements CollectionInterface  {
     
     private final LinkedList linkedList;
-    RandomObjectsCreator randomer = new RandomObjectsCreator();
-    RandomObject objectToAdd = randomer.createRandomObject();
+    private RandomObjectsCreator randomer = new RandomObjectsCreator();
+    private RandomObject objectToAdd = randomer.createRandomObject();
     
     TestLinkedList(LinkedList linkedList){
         this.linkedList = linkedList;
@@ -33,7 +33,9 @@ class TestLinkedList {
     resultTimes.put("Wybieranie", this.get());
     resultTimes.put("Czy zawiera? ", this.contains());
     resultTimes.put("Usuwanie", this.remove());
-    resultTimes.put("Sortowanie po Id", this.sort());
+    resultTimes.put("Sortowanie po Id", this.sortById());
+    resultTimes.put("Sortowanie po Name", this.sortByName());
+    
     
     return resultTimes;
     
@@ -67,12 +69,26 @@ class TestLinkedList {
         return time;
     }
     
-    public long sort() {
+    public long sortById() {
       long start =0;
       long stop = 0;
       
       start = System.nanoTime();
       Collections.sort(linkedList, new SortObjectsById());
+      stop = System.nanoTime();
+        
+      long time= stop-start;
+        
+        
+      return time;  
+    }
+    
+    public long sortByName() {
+      long start =0;
+      long stop = 0;
+      
+      start = System.nanoTime();
+      Collections.sort(linkedList, new SortObjectsByName());
       stop = System.nanoTime();
         
       long time= stop-start;

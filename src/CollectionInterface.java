@@ -10,4 +10,11 @@
  */
 public interface CollectionInterface {
     
+    public long add();
+    public long remove();
+    public long contains();
+    public long sortById();
+    public long sortByName();
+    public long get();
+        
 }

@@ -14,11 +14,11 @@ import java.util.TreeSet;
  *
  * @author Michał
  */
-class TestTreeSet {
+class TestTreeSet implements CollectionInterface  {
     
     private final TreeSet treeSet;
-    RandomObjectsCreator randomer = new RandomObjectsCreator();
-    RandomObject objectToAdd = randomer.createRandomObject();
+    private RandomObjectsCreator randomer = new RandomObjectsCreator();
+    private RandomObject objectToAdd = randomer.createRandomObject();
     
     TestTreeSet(TreeSet treeSet){
         this.treeSet = treeSet;
@@ -33,6 +33,7 @@ class TestTreeSet {
     resultTimes.put("Czy zawiera? ", this.contains());
     resultTimes.put("Usuwanie", this.remove());
     resultTimes.put("Sortowanie po Id", "Posortowane od razu");
+    resultTimes.put("Sortowanie po Name", "Brak sortowania");
     
     return resultTimes;
     
@@ -77,6 +78,21 @@ class TestTreeSet {
         long time= stop-start;
         
         return time;
+    }
+
+    @Override
+    public long get() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public long sortById() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public long sortByName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
