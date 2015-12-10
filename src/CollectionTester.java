@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -132,21 +133,27 @@ public class CollectionTester extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void actionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actionButtonActionPerformed
-            
+            boolean correctValue = true;
             collectionPick.getSelectedItem();
-            amountInput.getText();
-            
+            if(Integer.valueOf(amountInput.getText())<1000){
+                JOptionPane.showMessageDialog(this,"Niepoprawna ilość objektów");
+                amountInput.setText("500000");
+                correctValue=false;
+            }
+            if(correctValue){
             CollectionsFactory tests = new CollectionsFactory(collectionPick.getSelectedItem().toString(), Integer.valueOf(amountInput.getText()));
             System.out.println(tests);
             Map times = tests.getOutput();
             String results = times.toString();
+            
             OutputTextChanger prettyText = new OutputTextChanger();
             results = prettyText.getFormattedText(results);
+            
             SaveTestsToFile save = new SaveTestsToFile(results);    
             
             outputResults.setText(results);
             
-                 
+            }     
     }//GEN-LAST:event_actionButtonActionPerformed
 
     private void amountInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountInputActionPerformed

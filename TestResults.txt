@@ -184,3 +184,49 @@ Sortowanie po Id=151849423
  Wybieranie=621
  Dodawanie=0
  Usuwanie=2173 
+
+ Sortowanie po Id=162038544
+ Sortowanie po Name=399110298
+ Czy zawiera? =3681129
+ Wybieranie=2172
+ Dodawanie=4034
+ Usuwanie=199525 
+
+ Sortowanie po Id=171989972
+ Sortowanie po Name=379306119
+ Czy zawiera? =3844348
+ Wybieranie=1862
+ Dodawanie=3414
+ Usuwanie=197043 
+
+ Sortowanie po Id=1832723226
+ Sortowanie po Name=5412880009
+ Czy zawiera? =15725243
+ Wybieranie=621
+ Dodawanie=931
+ Usuwanie=2399886 
+
+ Sortowanie po Id=Posortowane od razu
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =7758
+ Wybieranie=Brak indeksu
+ Dodawanie=4654
+ Usuwanie=15205 
+
+{Sortowanie po Id=171319096, Sortowanie po Name=379840771, Czy zawiera? =3872276, Wybieranie=1551, Dodawanie=3724, Usuwanie=216281}
+
+ Sortowanie po Id=173012111
+ Sortowanie po Name=377344070
+ Czy zawiera? =3810215
+ Wybieranie=1862
+ Dodawanie=4034
+ Usuwanie=215040 
+
+{Sortowanie po Id=163251831, Sortowanie po Name=364503408, Czy zawiera? =3829764, Wybieranie=1551, Dodawanie=4034, Usuwanie=216281}
+
+ Sortowanie po Id=166146029
+ Sortowanie po Name=370756640
+ Czy zawiera? =3892134
+ Wybieranie=2173
+ Dodawanie=4034
+ Usuwanie=244519 
