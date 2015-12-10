@@ -1,4 +1,186 @@
+{Sortowanie po Id=169223929, Sortowanie po Name=374702147, Czy zawiera? =5038396, Wybieranie=1552, Dodawanie=3414, Usuwanie=213799}
 
+{Sortowanie po Id=168481993, Sortowanie po Name=367699532, Czy zawiera? =5397416, Wybieranie=1552, Dodawanie=4344, Usuwanie=255690}
 
-{Sortowanie po Id=154891016, Sortowanie po Name=390044475, Czy zawiera? =4883865, Wybieranie=1551, Dodawanie=4034, Usuwanie=210696}
-{Sortowanie po Id=147941153, Sortowanie po Name=356071225, Czy zawiera? =411152, Wybieranie=621, Dodawanie=1241, Usuwanie=199835}
+{Sortowanie po Id=173909509, Sortowanie po Name=392414262, Czy zawiera? =5015743, Wybieranie=2482, Dodawanie=3724, Usuwanie=209454}
+
+{Sortowanie po Id=171182563, Sortowanie po Name=365712350, Czy zawiera? =4087937, Wybieranie=1862, Dodawanie=4034, Usuwanie=354677}
+
+{Sortowanie po Id=162865192, Sortowanie po Name=371307119, Czy zawiera? =3986468, Wybieranie=1861, Dodawanie=3724, Usuwanie=278652}
+
+{Sortowanie po Id=165586242, Sortowanie po Name=375511419, Czy zawiera? =3886239, Wybieranie=1862, Dodawanie=5276, Usuwanie=211937}
+
+{Sortowanie po Id=176401865
+ Sortowanie po Name=368105098
+ Czy zawiera? =3795941
+ Wybieranie=2172
+ Dodawanie=4344
+ Usuwanie=233659}
+
+Sortowanie po Id=159610420
+ Sortowanie po Name=367336167
+ Czy zawiera? =3767083
+ Wybieranie=2172
+ Dodawanie=4344
+ Usuwanie=207282}
+
+Sortowanie po Id=163029963
+ Sortowanie po Name=370302977
+ Czy zawiera? =3901444
+ Wybieranie=1552
+ Dodawanie=3724
+ Usuwanie=199214}
+
+Sortowanie po Id=143884867
+ Sortowanie po Name=352411507
+ Czy zawiera? =1668811
+ Wybieranie=620
+ Dodawanie=931
+ Usuwanie=233348}
+
+Sortowanie po Id=148371233
+ Sortowanie po Name=389784442
+ Czy zawiera? =341954
+ Wybieranie=621
+ Dodawanie=931
+ Usuwanie=192388}
+
+Sortowanie po Id=165762805
+ Sortowanie po Name=370755089
+ Czy zawiera? =4221677
+ Wybieranie=1552
+ Dodawanie=3723
+ Usuwanie=220315}
+
+Sortowanie po Id=199773913
+ Sortowanie po Name=391072201
+ Czy zawiera? =15485067
+ Wybieranie=28238
+ Dodawanie=4344
+ Usuwanie=15691730}
+
+Sortowanie po Id=Brak sortowania
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =5896
+ Wybieranie=Brak indeksu
+ Dodawanie=4655
+ Usuwanie=3103}
+
+Sortowanie po Id=Brak sortowania
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =2483
+ Wybieranie=Brak indeksu
+ Dodawanie=5586
+ Usuwanie=14274}
+
+Sortowanie po Id=Posortowane od razu
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =8379
+ Wybieranie=Brak indeksu
+ Dodawanie=5275
+ Usuwanie=10551}
+
+Sortowanie po Id=162383291
+ Sortowanie po Name=374336300
+ Czy zawiera? =3782908
+ Wybieranie=1551
+ Dodawanie=4964
+ Usuwanie=196112}
+
+Sortowanie po Id=145488515
+ Sortowanie po Name=350054443
+ Czy zawiera? =1738009
+ Wybieranie=620
+ Dodawanie=1241
+ Usuwanie=215351}
+
+Sortowanie po Id=144664970
+ Sortowanie po Name=392572207
+ Czy zawiera? =343816
+ Wybieranie=621
+ Dodawanie=931
+ Usuwanie=189596}
+
+Sortowanie po Id=151849423
+ Sortowanie po Name=405091085
+ Czy zawiera? =1584720
+ Wybieranie=621
+ Dodawanie=621
+ Usuwanie=197353}
+
+ Sortowanie po Id=164691638
+ Sortowanie po Name=366373605
+ Czy zawiera? =3808353
+ Wybieranie=1862
+ Dodawanie=4034
+ Usuwanie=206973 
+
+ Sortowanie po Id=157303936
+ Sortowanie po Name=370179477
+ Czy zawiera? =3713400
+ Wybieranie=2172
+ Dodawanie=4034
+ Usuwanie=209765 
+
+ Sortowanie po Id=153255718
+ Sortowanie po Name=370728403
+ Czy zawiera? =1735837
+ Wybieranie=621
+ Dodawanie=931
+ Usuwanie=198283 
+
+ Sortowanie po Id=168540950
+ Sortowanie po Name=385537941
+ Czy zawiera? =3871654
+ Wybieranie=1551
+ Dodawanie=3723
+ Usuwanie=205110 
+
+ Sortowanie po Id=157289041
+ Sortowanie po Name=365250618
+ Czy zawiera? =3651340
+ Wybieranie=1862
+ Dodawanie=3413
+ Usuwanie=201386 
+
+ Sortowanie po Id=143060391
+ Sortowanie po Name=353183542
+ Czy zawiera? =1711323
+ Wybieranie=621
+ Dodawanie=931
+ Usuwanie=195801 
+
+ Sortowanie po Id=144624941
+ Sortowanie po Name=397399285
+ Czy zawiera? =342265
+ Wybieranie=931
+ Dodawanie=931
+ Usuwanie=189906 
+
+ Sortowanie po Id=150996710
+ Sortowanie po Name=377455159
+ Czy zawiera? =1607992
+ Wybieranie=621
+ Dodawanie=931
+ Usuwanie=186803 
+
+ Sortowanie po Id=159646105
+ Sortowanie po Name=379693377
+ Czy zawiera? =1695188
+ Wybieranie=621
+ Dodawanie=931
+ Usuwanie=210696 
+
+ Sortowanie po Id=Posortowane od razu
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =8068
+ Wybieranie=Brak indeksu
+ Dodawanie=4654
+ Usuwanie=11171 
+
+ Sortowanie po Id=1617922
+ Sortowanie po Name=1796656
+ Czy zawiera? =41580
+ Wybieranie=621
+ Dodawanie=0
+ Usuwanie=2173 

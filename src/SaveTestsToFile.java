@@ -1,56 +1,50 @@
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.*;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
 /**
  *
  * @author pc109
  */
 public class SaveTestsToFile {
+    
     private String results;
-    private String resultsContent="";
+    private ArrayList<String> resultsContent=new ArrayList();
 
     
     SaveTestsToFile(String results) {
-        this.results = results; 
+        this.results = results;
         this.readEventsFromFile();
         this.writeEventsToFile();
-        
-    }
-    
+    }        
     public void readEventsFromFile(){
         try {
             File file = new File("TestResults.txt");
             Scanner in = new Scanner(file);
-            while(in.hasNextLine()){
-                resultsContent+="\n"+in.nextLine();
-             }
 
+            while(in.hasNextLine()){
+                resultsContent.add(in.nextLine());
+            }
         } catch (FileNotFoundException ex) {}
-     }
+    }
     
     public void writeEventsToFile() {
-             PrintWriter file=null;
-         try {
-
-            file = new PrintWriter("TestResults.txt");
+             PrintWriter saveFile=null;
+        try {
+            saveFile = new PrintWriter("TestResults.txt");
         } catch (FileNotFoundException ex) {
             Logger.getLogger(SaveTestsToFile.class.getName()).log(Level.SEVERE, null, ex);
-         }
-           
-      file.println(resultsContent+"\n"+results);
-      file.close();
-     }
-    
-    
-    
-}   
+        }
+        if(!resultsContent.isEmpty()){
+            for(int i=0; i<resultsContent.size();i++){
+               saveFile.println(resultsContent.get(i));
+            }
+            saveFile.println("");
+        }
+      saveFile.println(results);
+      saveFile.close();
+    }
+}
