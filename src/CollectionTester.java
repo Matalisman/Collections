@@ -114,8 +114,7 @@ public class CollectionTester extends javax.swing.JFrame {
             System.out.println(tests);
             Map times = tests.getOutput();
             String results = times.toString();
-            SaveTestsToFile fileManager = new SaveTestsToFile(results);
-            fileManager.saveResults();            
+            SaveTestsToFile save = new SaveTestsToFile(results);         
     }//GEN-LAST:event_actionButtonActionPerformed
 
     private void amountInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_amountInputActionPerformed

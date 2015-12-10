@@ -1,10 +1,9 @@
 
-import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import java.util.logging.*;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -18,38 +17,40 @@ import java.io.IOException;
  */
 public class SaveTestsToFile {
     private String results;
-    private String read; 
+    private String resultsContent="";
 
     
     SaveTestsToFile(String results) {
-        this.results = results;
+        this.results = results; 
+        this.readEventsFromFile();
+        this.writeEventsToFile();
+        
     }
     
-    public void saveResults() {
+    public void readEventsFromFile(){
         try {
-            this.FileReaderDemo();
-            File file = new File("test.txt");
-            FileWriter fileWriter = new FileWriter(file);
-            
-            
-            System.out.println("W saveResults");
-            fileWriter.write(read);
-            fileWriter.write(results);
-            fileWriter.flush();
-            fileWriter.close();
-            } catch (IOException e) {
-		}      
-    }
+            File file = new File("TestResults.txt");
+            Scanner in = new Scanner(file);
+            while(in.hasNextLine()){
+                resultsContent+="\n"+in.nextLine();
+             }
+
+        } catch (FileNotFoundException ex) {}
+     }
     
-    public void FileReaderDemo() throws FileNotFoundException, IOException{
-       
-        FileReader fr = new FileReader("test.txt"); 
-        BufferedReader br = new BufferedReader(fr); 
-        
-        while((read = br.readLine()) != null) { 
-        System.out.println(read); 
-        } 
-        fr.close(); 
-        } 
-        
-}
+    public void writeEventsToFile() {
+             PrintWriter file=null;
+         try {
+
+            file = new PrintWriter("TestResults.txt");
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(SaveTestsToFile.class.getName()).log(Level.SEVERE, null, ex);
+         }
+           
+      file.println(resultsContent+"\n"+results);
+      file.close();
+     }
+    
+    
+    
+}   

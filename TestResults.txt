@@ -1,0 +1,4 @@
+
+
+{Sortowanie po Id=154891016, Sortowanie po Name=390044475, Czy zawiera? =4883865, Wybieranie=1551, Dodawanie=4034, Usuwanie=210696}
+{Sortowanie po Id=147941153, Sortowanie po Name=356071225, Czy zawiera? =411152, Wybieranie=621, Dodawanie=1241, Usuwanie=199835}
