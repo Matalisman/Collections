@@ -258,3 +258,66 @@ Sortowanie po Id=151849423
  Wybieranie=621
  Dodawanie=931
  Usuwanie=113571 
+
+ Sortowanie po Id=165936885
+ Sortowanie po Name=388588842
+ Czy zawiera? =3740087
+ Wybieranie=1862
+ Dodawanie=4033
+ Usuwanie=200456 
+
+ Sortowanie po Id=Brak sortowania
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =3103
+ Wybieranie=Brak indeksu
+ Dodawanie=4654
+ Usuwanie=6826 
+
+ Sortowanie po Id=Posortowane od razu
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =7757
+ Wybieranie=Brak indeksu
+ Dodawanie=4344
+ Usuwanie=11791 
+
+ Sortowanie po Id=171218869
+ Sortowanie po Name=385591623
+ Czy zawiera? =3770806
+ Wybieranie=1552
+ Dodawanie=4344
+ Usuwanie=196111 
+
+ Sortowanie po Id=Brak sortowania
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =2482
+ Wybieranie=Brak indeksu
+ Dodawanie=4655
+ Usuwanie=2483 
+
+ Sortowanie po Id=160581670
+ Sortowanie po Name=375671224
+ Czy zawiera? =3684232
+ Wybieranie=1862
+ Dodawanie=12723
+ Usuwanie=210696 
+
+ Sortowanie po Id=Posortowane od razu
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =7757
+ Wybieranie=Brak indeksu
+ Dodawanie=4964
+ Usuwanie=22652 
+
+ Sortowanie po Id=Posortowane od razu
+ Sortowanie po Name=Brak sortowania
+ Czy zawiera? =5895
+ Wybieranie=Brak indeksu
+ Dodawanie=1862
+ Usuwanie=3103 
+
+ Sortowanie po Id=189866238
+ Sortowanie po Name=386162270
+ Czy zawiera? =15063365
+ Wybieranie=31961
+ Dodawanie=3723
+ Usuwanie=15009062 
