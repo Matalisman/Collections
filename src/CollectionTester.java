@@ -169,11 +169,10 @@ public class CollectionTester extends javax.swing.JFrame {
             System.out.println(tests);
             Map times = tests.getOutput();
             String results = times.toString();
-
+            SaveTestsToFile save = new SaveTestsToFile(results);  
             OutputTextChanger prettyText = new OutputTextChanger();
             results = prettyText.getFormattedText(results);
-
-            SaveTestsToFile save = new SaveTestsToFile(results);    
+ 
 
             outputResults.setText(results);
 
