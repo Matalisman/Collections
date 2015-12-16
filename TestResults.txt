@@ -1,1 +1,11 @@
 {Sortowanie po Id=170781030, Sortowanie po Name=374364537, Czy zawiera? =3862656, Wybieranie=1862, Dodawanie=4344, Usuwanie=197973}
+
+{Sortowanie po Id=Brak sortowania, Sortowanie po Name=Brak sortowania, Czy zawiera? =88852, Wybieranie=Brak indeksu, Dodawanie=114373, Usuwanie=100194}
+
+{Sortowanie po Id=Posortowane od razu, Sortowanie po Name=Brak sortowania, Czy zawiera? =82708, Wybieranie=Brak indeksu, Dodawanie=47735, Usuwanie=143203}
+
+{Sortowanie po Id=5195942, Sortowanie po Name=4096637, Czy zawiera? =98777, Wybieranie=7089, Dodawanie=12288, Usuwanie=8979}
+
+{Sortowanie po Id=574519279, Sortowanie po Name=2270143610, Czy zawiera? =5302280, Wybieranie=1418, Dodawanie=2363, Usuwanie=787851}
+
+{Sortowanie po Id=572409520, Sortowanie po Name=2707293224, Czy zawiera? =5562220, Wybieranie=946, Dodawanie=2836, Usuwanie=783125}
